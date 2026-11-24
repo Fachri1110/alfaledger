@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
-        "ext-pdo_pgsql": "*"
+        "ext-pdo_pgsql": "*",
         "ext-gd": "*",
         "ext-zip": "*",
         "ext-xml": "*",
