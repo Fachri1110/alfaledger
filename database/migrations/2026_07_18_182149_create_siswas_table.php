@@ -16,10 +16,9 @@ return new class extends Migration
             $table->string('nama_siswa');
             $table->string('nisn')->unique();
             $table->date('tanggal_masuk');
-            // Status keseluruhan siswa: lunas / belum_lunas (status pembayaran berjalan)
-            // atau pindah (siswa sudah tidak aktif)
-            $table->enum('status_siswa', ['lunas', 'belum_lunas', 'pindah'])
-                ->default('belum_lunas');
+            // Status siswa: aktif / non_aktif (siswa pindah, lulus, dll.)
+            // Status pembayaran (lunas / belum lunas) tidak disimpan di sini.
+            $table->string('status_siswa', 50)->default('aktif');
             // golongan_id = golongan/kelas siswa SAAT INI.
             // Riwayat kenaikan kelas tersimpan di tabel riwayat_kelas_siswas.
             $table->foreignId('golongan_id')
