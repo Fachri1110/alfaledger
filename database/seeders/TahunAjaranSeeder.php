@@ -15,7 +15,7 @@ class TahunAjaranSeeder extends Seeder
         Tahun_ajaran::firstOrCreate(
             ['tahun_ajaran' => '2026/2027'],
             [
-                'semester' => 1,
+                'semester' => 'ganjil',
                 'status'   => 'aktif',
             ]
         );
