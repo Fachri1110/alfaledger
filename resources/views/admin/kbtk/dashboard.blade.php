@@ -40,7 +40,7 @@
 
         {{-- Banner dengan Stats Cards --}}
         <div class="bg-cover bg-center rounded-2xl p-8 text-white shadow-[0_4px_20px_rgba(120,0,139,0.15)] flex items-center justify-between gap-6 min-h-[160px] relative overflow-hidden"
-             style="background-image: url('{{asset(images/headline.png)}}');"
+             style="background-image: url('{{ asset('images/headline.png') }}');"
             
             {{-- Text Kiri --}}
             <div class="flex flex-col justify-center z-10">
